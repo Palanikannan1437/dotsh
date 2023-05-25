@@ -103,7 +103,6 @@ declare nixpkgs_level_1+=(
 # Your DOTFILES_EDITOR is internally included.
 # gh/glab CLI is internally included based on git context.
 declare nixpkgs_level_2+=(
-    nixpkgs.zoxide
     nixpkgs.rclone
     nixpkgs.bat
     nixpkgs.exa
@@ -118,16 +117,6 @@ declare nixpkgs_level_3+=(
     nixpkgs.file
     nixpkgs.bottom
     nixpkgs.coreutils
-    nixpkgs.htop
-    nixpkgs.lsof
-    nixpkgs.neofetch
-    nixpkgs.p7zip
-    nixpkgs.rsync # Useful for 'bashbox livetest' command
-    nixpkgs.helm
-    nixpkgs.kubectl
-    nixpkgs.k9s
-    nixpkgs.google-cloud-sdk
-    nixpkgs.doppler
 )
 if command::exists apt; then {
     aptpkgs_level_1+=(
